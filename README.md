@@ -28,3 +28,30 @@ query blah($message1:String, $message2: String)
     "message2": "world"
 }
 ```
+
+Received Value
+
+```json
+{
+  "data": {
+    "contact": [
+      null,
+      null
+    ]
+  }
+}
+```
+
+Expected value
+
+
+```json
+{
+  "data": {
+    "contact": [
+      "hello",
+      "world"
+    ]
+  }
+}
+```
